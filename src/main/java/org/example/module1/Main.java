@@ -1,6 +1,6 @@
-package org.example;
+package org.example.module1;
 
-import org.example.model.Anime;
+import org.example.module1.model.Anime;
 
 import java.util.ArrayList;
 import java.util.List;

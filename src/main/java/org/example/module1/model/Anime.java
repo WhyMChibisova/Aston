@@ -1,4 +1,4 @@
-package org.example.model;
+package org.example.module1.model;
 
 import java.util.List;
 

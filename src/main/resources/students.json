@@ -1,0 +1,110 @@
+[
+  {
+    "name": "Чибисова Мария",
+    "group": "ИТ-96",
+    "books": [
+      {
+        "name": "Война и мир",
+        "author": "Лев Толстой",
+        "numberOfPages": 1225,
+        "yearOfRelease": 1869
+      },
+      {
+        "name": "Преступление и наказание",
+        "author": "Фёдор Достоевский",
+        "numberOfPages": 672,
+        "yearOfRelease": 1866
+      },
+      {
+        "name": "Мастер и Маргарита",
+        "author": "Михаил Булгаков",
+        "numberOfPages": 512,
+        "yearOfRelease": 1967
+      },
+      {
+        "name": "Евгений Онегин",
+        "author": "Александр Пушкин",
+        "numberOfPages": 384,
+        "yearOfRelease": 1833
+      },
+      {
+        "name": "Мёртвые души",
+        "author": "Николай Гоголь",
+        "numberOfPages": 352,
+        "yearOfRelease": 1842
+      }
+    ]
+  },
+  {
+    "name": "Левданский Дмитрий",
+    "group": "ИТ-96",
+    "books": [
+      {
+        "name": "1984",
+        "author": "Джордж Оруэлл",
+        "numberOfPages": 328,
+        "yearOfRelease": 1949
+      },
+      {
+        "name": "Сто лет одиночества",
+        "author": "Габриэль Гарсиа Маркес",
+        "numberOfPages": 416,
+        "yearOfRelease": 1967
+      },
+      {
+        "name": "Великий Гэтсби",
+        "author": "Фрэнсис Скотт Фицджеральд",
+        "numberOfPages": 256,
+        "yearOfRelease": 1925
+      },
+      {
+        "name": "Над пропастью во ржи",
+        "author": "Джером Сэлинджер",
+        "numberOfPages": 288,
+        "yearOfRelease": 1951
+      },
+      {
+        "name": "Улисс",
+        "author": "Джеймс Джойс",
+        "numberOfPages": 736,
+        "yearOfRelease": 1922
+      }
+    ]
+  },
+  {
+    "name": "Рудьман Анастасия",
+    "group": "ИТ-96",
+    "books": [
+      {
+        "name": "Чистый код",
+        "author": "Роберт Мартин",
+        "numberOfPages": 464,
+        "yearOfRelease": 2008
+      },
+      {
+        "name": "Искусство программирования",
+        "author": "Дональд Кнут",
+        "numberOfPages": 768,
+        "yearOfRelease": 1968
+      },
+      {
+        "name": "Совершенный код",
+        "author": "Стив Макконнелл",
+        "numberOfPages": 896,
+        "yearOfRelease": 1993
+      },
+      {
+        "name": "Паттерны проектирования",
+        "author": "Эрих Гамма",
+        "numberOfPages": 416,
+        "yearOfRelease": 1994
+      },
+      {
+        "name": "Java. Полное руководство",
+        "author": "Герберт Шилдт",
+        "numberOfPages": 1488,
+        "yearOfRelease": 1997
+      }
+    ]
+  }
+]
