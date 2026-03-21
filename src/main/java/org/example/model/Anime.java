@@ -1,6 +1,5 @@
 package org.example.model;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public final class Anime {
@@ -11,7 +10,7 @@ public final class Anime {
     public Anime(String name, int numberOfEpisodes, List<String> genres) {
         this.name = name;
         this.numberOfEpisodes = numberOfEpisodes;
-        this.genres = new ArrayList<>(genres);
+        this.genres = genres != null ? List.copyOf(genres) : List.of();
     }
 
     public String getName() {
@@ -23,7 +22,7 @@ public final class Anime {
     }
 
     public List<String> getGenres() {
-        return List.copyOf(genres);
+        return genres;
     }
 
     @Override

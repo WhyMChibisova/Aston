@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
-    static void main() {
+    public static void main(String[] args) {
         List<String> genres = new ArrayList<>(List.of("shonen", "action-adventure", "fantasy"));
         Anime anime = new Anime(
                 "Naruto",
