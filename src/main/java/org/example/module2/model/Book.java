@@ -1,15 +1,19 @@
 package org.example.module2.model;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class Book {
-    private String name;
-    private String author;
-    private int numberOfPages;
-    private int yearOfRelease;
+    private final String name;
+    private final String author;
+    private final int numberOfPages;
+    private final int yearOfRelease;
 
-    public Book() {
-    }
-
-    public Book(String name, String author, int numberOfPages, int yearOfRelease) {
+    @JsonCreator
+    public Book(@JsonProperty("name") String name,
+                @JsonProperty("author") String author,
+                @JsonProperty("numberOfPages") int numberOfPages,
+                @JsonProperty("yearOfRelease") int yearOfRelease) {
         this.name = name;
         this.author = author;
         this.numberOfPages = numberOfPages;
@@ -20,32 +24,16 @@ public class Book {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public String getAuthor() {
         return author;
-    }
-
-    public void setAuthor(String author) {
-        this.author = author;
     }
 
     public int getNumberOfPages() {
         return numberOfPages;
     }
 
-    public void setNumberOfPages(int numberOfPages) {
-        this.numberOfPages = numberOfPages;
-    }
-
     public int getYearOfRelease() {
         return yearOfRelease;
-    }
-
-    public void setYearOfRelease(int yearOfRelease) {
-        this.yearOfRelease = yearOfRelease;
     }
 
     @Override

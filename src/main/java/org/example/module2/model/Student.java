@@ -1,43 +1,34 @@
 package org.example.module2.model;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.util.List;
 
 public class Student {
-    private String name;
-    private String group;
-    private List<Book> books;
+    private final String name;
+    private final String group;
+    private final List<Book> books;
 
-    public Student() {
-    }
-
-    public Student(String name, String group, List<Book> books) {
+    @JsonCreator
+    public Student(@JsonProperty("name") String name,
+                   @JsonProperty("group") String group,
+                   @JsonProperty("books") List<Book> books) {
         this.name = name;
         this.group = group;
-        this.books = books;
+        this.books = books != null ? List.copyOf(books) : List.of();
     }
 
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public String getGroup() {
         return group;
     }
 
-    public void setGroup(String group) {
-        this.group = group;
-    }
-
     public List<Book> getBooks() {
         return books;
-    }
-
-    public void setBooks(List<Book> books) {
-        this.books = books;
     }
 
     @Override
