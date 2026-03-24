@@ -11,8 +11,10 @@ import java.util.Comparator;
 import java.util.List;
 
 public class Main {
+    private static final String FILE_NAME = "src/main/resources/students.json";
+
     public static void main(String[] args) {
-        Path fileStudents = Paths.get("src","main", "resources", "students.json");
+        Path fileStudents = Paths.get(FILE_NAME);
         List<Student> students = null;
 
         if (Files.exists(fileStudents) && Files.isRegularFile(fileStudents)) {
