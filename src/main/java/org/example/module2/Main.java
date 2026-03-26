@@ -10,7 +10,7 @@ public class Main {
     private static final String FILE_NAME = "src/main/resources/students.json";
 
     public static void main(String[] args) {
-        List<Student> students = StudentReader.readStudentsFromJsonFile(FILE_NAME);
+        final List<Student> students = StudentReader.readStudentsFromJsonFile(FILE_NAME);
 
         StudentStream.processStudentData(students);
     }

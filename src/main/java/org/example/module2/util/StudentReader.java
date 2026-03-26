@@ -15,8 +15,8 @@ import java.util.List;
 public class StudentReader {
     private static final ObjectMapper objectMapper = new ObjectMapper();
 
-    public static List<Student> readStudentsFromJsonFile(String filename) {
-        Path fileStudents = Paths.get(filename);
+    public static List<Student> readStudentsFromJsonFile(final String filename) {
+        final Path fileStudents = Paths.get(filename);
         List<Student> students = null;
 
         if (Files.exists(fileStudents) && Files.isRegularFile(fileStudents)) {
