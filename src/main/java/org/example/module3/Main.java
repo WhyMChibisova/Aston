@@ -13,6 +13,10 @@ import org.example.module3.decorator.SpaProcedure;
 import org.example.module3.decorator.TeaCeremonyDecorator;
 import org.example.module3.proxy.SpaService;
 import org.example.module3.proxy.SpaServiceProxy;
+import org.example.module3.strategy.ArraySorter;
+import org.example.module3.strategy.BubbleSort;
+import org.example.module3.strategy.MergeSort;
+import org.example.module3.strategy.QuickSort;
 
 import java.util.Random;
 import java.util.stream.IntStream;
@@ -51,5 +55,13 @@ public class Main {
         IntStream.generate(() -> new Random().nextInt(2 * RANGE_LIMIT + 1) - RANGE_LIMIT)
                 .limit(RANGE_LIMIT)
                 .forEach(negativeNumberHandler::validate);
+
+        int[] array = { 2, 1, 4, 3 };
+        ArraySorter sorter = new ArraySorter(new BubbleSort());
+        sorter.sort(array);
+        sorter.setSortingStrategy(new MergeSort());
+        sorter.sort(array);
+        sorter.setSortingStrategy(new QuickSort());
+        sorter.sort(array);
     }
 }
