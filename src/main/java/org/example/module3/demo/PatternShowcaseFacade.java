@@ -1,13 +1,12 @@
 package org.example.module3.demo;
 
-import java.util.Arrays;
 import java.util.List;
 
 public class PatternShowcaseFacade {
     private final List<PatternDemo> demos;
 
     public PatternShowcaseFacade() {
-        this.demos = Arrays.asList(
+        this.demos = List.of(
                 new StrategyDemo(),
                 new ChainDemo(),
                 new BuilderDemo(),
