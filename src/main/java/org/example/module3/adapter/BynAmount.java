@@ -1,13 +1,15 @@
 package org.example.module3.adapter;
 
-public class BynAmount {
-    private final double amount;
+import java.math.BigDecimal;
 
-    public BynAmount(double amount) {
+public class BynAmount {
+    private final BigDecimal amount;
+
+    public BynAmount(BigDecimal amount) {
         this.amount = amount;
     }
 
-    public double getAmount() {
+    public BigDecimal getAmount() {
         return amount;
     }
 }

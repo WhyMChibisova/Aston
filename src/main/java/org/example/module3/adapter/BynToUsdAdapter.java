@@ -1,15 +1,18 @@
 package org.example.module3.adapter;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+
 public class BynToUsdAdapter implements UsdCurrency {
     private final BynAmount bynAmount;
-    private final double EXCHANGE_RATE = 2.95;
+    private final BigDecimal EXCHANGE_RATE = BigDecimal.valueOf(2.95);
 
     public BynToUsdAdapter(final BynAmount bynAmount) {
         this.bynAmount = bynAmount;
     }
 
     @Override
-    public double getAmountInUSD() {
-        return bynAmount.getAmount() / EXCHANGE_RATE;
+    public BigDecimal getAmountInUSD() {
+        return bynAmount.getAmount().divide(EXCHANGE_RATE, 2, RoundingMode.HALF_UP);
     }
 }

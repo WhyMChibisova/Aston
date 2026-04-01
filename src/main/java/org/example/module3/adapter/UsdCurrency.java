@@ -1,5 +1,7 @@
 package org.example.module3.adapter;
 
+import java.math.BigDecimal;
+
 public interface UsdCurrency {
-    double getAmountInUSD();
+    BigDecimal getAmountInUSD();
 }
