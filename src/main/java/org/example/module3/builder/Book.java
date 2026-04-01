@@ -29,6 +29,10 @@ public class Book {
         return yearOfRelease;
     }
 
+    public static BookBuilder builder() {
+        return new BookBuilder();
+    }
+
     public static class BookBuilder {
         private String name;
         private String author;

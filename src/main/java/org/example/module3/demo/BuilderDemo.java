@@ -5,7 +5,7 @@ import org.example.module3.builder.Book;
 public class BuilderDemo implements PatternDemo {
     @Override
     public void demonstrate() {
-        Book book = new Book.BookBuilder()
+        Book book = Book.builder()
                 .name("Война и мир")
                 .author("Лев Толстой")
                 .numberOfPages(1225)
