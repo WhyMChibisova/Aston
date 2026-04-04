@@ -8,7 +8,8 @@ public class ThreadDemoFacade {
     public ThreadDemoFacade() {
         this.demos = List.of(
                 new DeadlockDemo(),
-                new LivelockDemo()
+                new LivelockDemo(),
+                new CyclePrintDemo()
         );
     }
 
