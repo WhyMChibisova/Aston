@@ -58,7 +58,7 @@ public class DeadlockDemo implements ThreadDemo {
                         System.out.println(threadName + " lock " + getLockName(lock2));
                     } finally {
                         lock2.unlock();
-                        System.out.println(threadName + " unlock " + getLockName(lock1));
+                        System.out.println(threadName + " unlock " + getLockName(lock2));
                     }
                 } finally {
                     lock1.unlock();

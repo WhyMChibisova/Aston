@@ -7,7 +7,8 @@ public class ThreadDemoFacade {
 
     public ThreadDemoFacade() {
         this.demos = List.of(
-                new DeadlockDemo()
+                new DeadlockDemo(),
+                new LivelockDemo()
         );
     }
 
